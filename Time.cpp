@@ -1,4 +1,7 @@
 #include "Time.h"
+#include <iostream>
+
+using namespace std;
 
 
 Time::Time()
@@ -27,4 +30,29 @@ void Time::set(int hoursIn, int minutesIn)
 {
 	hours = hoursIn;
 	minutes = minutesIn;
+}
+
+ostream& operator<<(ostream& output, Time &myTime)
+{
+	if (myTime.hours < 10)
+	{
+		output << "0" << myTime.hours << ":";
+	}
+
+	else
+	{
+		output << myTime.hours << ":";
+	}
+
+	if (myTime.minutes < 10)
+	{
+		output << "0" << myTime.minutes;
+	}
+
+	else
+	{
+		output << myTime.minutes;
+	}
+
+	return output;
 }
