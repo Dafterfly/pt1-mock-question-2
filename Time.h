@@ -13,6 +13,7 @@ public:
 	void get(int &hrVar, int &minVar);
 	void set(int hoursIn, int minutesIn);
 	friend ostream& operator<<(ostream& output, Time &myTime);
+	Time operator++(int);
 	~Time();
 };
 

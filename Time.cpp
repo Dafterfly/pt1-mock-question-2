@@ -56,3 +56,21 @@ ostream& operator<<(ostream& output, Time &myTime)
 
 	return output;
 }
+
+// Define postfix increment operator.
+Time Time::operator++(int)
+{
+	Time temp = *this;
+
+	if (temp.minutes <= 59)
+	{
+		temp.minutes = 0;
+		temp.hours++;
+	}
+	else
+	{
+		temp.minutes++;
+	}
+
+	return temp;
+}

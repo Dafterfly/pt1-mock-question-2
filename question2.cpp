@@ -31,4 +31,8 @@ int main(int argc, char *argv[]) {
 	myTime.get(hours, mins);
 	cout << "Design 1 starts at " << mins << " past " << hours;   // display time in another format
 
+	myTime++;
+	cout << "CM3 starts at " << myTime << endl;
+
+
 }
