@@ -5,7 +5,7 @@
 // Date: 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 #include <iostream>
-
+#include "Time.h"
 using namespace std;
 
 // ***** QUESTION 2 *****
@@ -23,7 +23,7 @@ int main(int argc, char *argv[]) {
 
 	Time myTime(8, 40);									// instantiate time class 
 
-	cout << "CM3 starts at " << myTime << endl;			// demonstrate overloaded stream insertion operator
+//	cout << "CM3 starts at " << myTime << endl;			// demonstrate overloaded stream insertion operator
 
 	myTime.set(10, 30);									// change the time
 

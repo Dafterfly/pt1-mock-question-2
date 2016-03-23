@@ -1,4 +1,5 @@
 #pragma once
+
 class Time
 { 
 private:
@@ -6,6 +7,7 @@ private:
 public:
 	Time();
 	Time(int hoursIn, int minutesIn);
+	void get(int hrVar, int minVar);
 	~Time();
 };
 
