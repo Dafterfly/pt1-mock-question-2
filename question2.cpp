@@ -27,8 +27,7 @@ int main(int argc, char *argv[]) {
 
 	myTime.set(10, 30);									// change the time
 
-	int hours = 1;
-		int mins = 2;									// get changed time
+	int hours, mins;									// get changed time
 	myTime.get(hours, mins);
 	cout << "Design 1 starts at " << mins << " past " << hours;   // display time in another format
 
