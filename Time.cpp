@@ -17,7 +17,7 @@ Time::~Time()
 {
 }
 
-void Time::get(int hrVar, int minVar)
+void Time::get(int &hrVar, int &minVar)
 {
 	hrVar = hours;
 	minVar = minutes;
